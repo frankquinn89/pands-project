@@ -11,12 +11,23 @@ data = pd.read_csv("data/iris.csv", sep=",", header = None, names= ["Sepal Lengt
 # USing sys.stdout to write to file as it was easier than opening a file and converting a dataframe to string to write
 def create_summary_file():
     sys.stdout = open("analysis/Summary_analysis.txt", "w")
-    print ("*****************************************************************")
     print ("Overview of Iris Fisher data:")
     print ("\n")
     print(data)
-    print ("*****************************************************************")
+    print ("\n")
+    print ("******************************************************************************************")
+    print ("\n")
+    print ("Stats of Iris Fisher data:")
+    print ("\n")
+    print(data.describe())
+    print ("\n")
+    print ("******************************************************************************************")
+    print ("\n")
+    print ("Variety and counts of Species:")
+    print ("\n")
+    print(data.groupby('Species').size())
+    print ("\n")
+    print ("******************************************************************************************")
     sys.stdout.close()
 
 create_summary_file()
-
