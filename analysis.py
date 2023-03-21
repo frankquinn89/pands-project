@@ -51,7 +51,19 @@ def plot_sepal_length_hist():
     plt.savefig("images/Sepal_length_hist.png")
     plt.show()
 
+def plot_sepal_width_hist():
+    sns.histplot(setosa["Sepal Width (cm)"], label = "Iris-setosa", color = "red", )
+    sns.histplot(versicolor["Sepal Width (cm)"], label = "Iris-versicolor", color = "blue")
+    sns.histplot(virginica["Sepal Width (cm)"], label = "Iris-virginica", color = "green")
+    plt.title("Sepal Width")
+    plt.xlabel("Width")
+    plt.ylabel("Count")
+    plt.legend()
+    plt.savefig("images/Sepal_width_hist.png")
+    plt.show()
+
 
 
 create_summary_file()
 plot_sepal_length_hist()
+plot_sepal_width_hist()
