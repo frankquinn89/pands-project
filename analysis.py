@@ -74,7 +74,19 @@ def plot_petal_width_hist():
     plt.show()
 
 
+def plot_petal_length_hist():
+    sns.histplot(setosa["Petal Length (cm)"], label = "Iris-setosa", color = "red", )
+    sns.histplot(versicolor["Petal Length (cm)"], label = "Iris-versicolor", color = "blue")
+    sns.histplot(virginica["Petal Length (cm)"], label = "Iris-virginica", color = "green")
+    plt.title("Petal Length")
+    plt.xlabel("Length")
+    plt.ylabel("Count")
+    plt.legend()
+    plt.savefig("images/Petal_length_hist.png")
+    plt.show()
+
 create_summary_file()
 plot_sepal_length_hist()
 plot_sepal_width_hist()
 plot_petal_width_hist()
+plot_petal_length_hist()
