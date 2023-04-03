@@ -104,6 +104,12 @@ def plot_sepal_scattor():
     plt.savefig("images/Sepal-scattorplot.png")
     plt.show()
 
+
+def pairplot():
+    sb.pairplot(data, hue = "Species",  palette = ["red","blue","lime"])
+    plt.savefig("images/pairplot.png")
+    plt.show()
+
 create_summary_file()
 plot_sepal_length_hist()
 plot_sepal_width_hist()
@@ -111,5 +117,4 @@ plot_petal_width_hist()
 plot_petal_length_hist()
 plot_petal_scattor()
 plot_sepal_scattor()
-
-
+pairplot()
