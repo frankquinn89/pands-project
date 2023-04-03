@@ -110,6 +110,21 @@ def pairplot():
     plt.savefig("images/pairplot.png")
     plt.show()
 
+
+def boxplots():
+    sb.boxplot(x="Species", y="Petal Width (cm)", data=data)
+    plt.savefig("images/BoxPlotPetalWidth.png")
+    plt.show()
+    sb.boxplot(x="Species", y="Petal Length (cm)", data=data)
+    plt.savefig("images/BoxPlotPetalLength.png")
+    plt.show()
+    sb.boxplot(x="Species", y="Sepal Width (cm)", data=data)
+    plt.savefig("images/BoxPlotSetalWidth.png")
+    plt.show()
+    sb.boxplot(x="Species", y="Sepal Length (cm)", data=data)
+    plt.savefig("images/BoxPlotSetalLength.png")
+    plt.show()
+
 create_summary_file()
 plot_sepal_length_hist()
 plot_sepal_width_hist()
@@ -118,3 +133,4 @@ plot_petal_length_hist()
 plot_petal_scattor()
 plot_sepal_scattor()
 pairplot()
+boxplots()
