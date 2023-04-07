@@ -146,18 +146,22 @@ def boxplots():
     #Box plot for Ptail Width
     #Define axis and input data
     sb.boxplot(x="Species", y="Petal Width (cm)", data=data)
+    plt.title("Petal Width Distribution")
     plt.savefig("images/BoxPlotPetalWidth.png")
     plt.show()
     #Box plot for Petal Length
     sb.boxplot(x="Species", y="Petal Length (cm)", data=data)
+    plt.title("Petal Length Distribution")
     plt.savefig("images/BoxPlotPetalLength.png")
     plt.show()
     #Box plot for Sepal Width
     sb.boxplot(x="Species", y="Sepal Width (cm)", data=data)
+    plt.title("Sepal Width Distribution")
     plt.savefig("images/BoxPlotSetalWidth.png")
     plt.show()
     #Box plot for Sepal Length
     sb.boxplot(x="Species", y="Sepal Length (cm)", data=data)
+    plt.title("Sepal Length Distribution")
     plt.savefig("images/BoxPlotSetalLength.png")
     plt.show()
 
