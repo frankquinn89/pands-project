@@ -129,15 +129,3 @@ def boxplots():
     plt.savefig("images/BoxPlotSetalLength.png")
     plt.show()
 
-create_summary_file()
-#plot_sepal_length_hist()
-#plot_sepal_width_hist()
-#plot_petal_width_hist()
-#plot_petal_length_hist()
-#plot_petal_scattor()
-#plot_sepal_scattor()
-#pairplot()
-#boxplots()
-
-
-
