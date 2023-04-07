@@ -116,7 +116,6 @@ Here is 1 of the fuctions for Sepal Width. The other 3 functions are almost iden
     plt.xlabel("Width")
     plt.ylabel("Count")
     plt.legend()
-    plt.savefig("images/Sepal_width_hist.png")
     plt.show()
 ```
 
@@ -130,43 +129,63 @@ There are the resulting Histograms:
 
 <p>From this graph we can see that the setosa seems to have the most distinct features compared to the other two flowers. The setosa also by far has the largest petals (in both width and length). Versicolor and virgincia seem to overlap quite a bit in sepal length and width. There appears to be more of a difference between the two in petal length and width.</p>
 
+## Pair Plot
 
+Next we will try to take a look at how some of these variables interact. An easy way to get a good overview of this is with a pairplot.
+This gives us a great overview and allows us to better visualise the data thereby allowing us to make important observations about the data.
 
+```python
+def pairplot():
+    sb.pairplot(data, hue = "Species",  palette = ["red","blue","lime"])
+    plt.show()
+```
 
+![image](https://user-images.githubusercontent.com/16778503/230638633-57e90617-af1d-43cc-bfc2-166888ec827c.png)
 
+Let's look a little but closer a some of these scatter plots:
 
+## Scattor Plots
 
+Firstly we will look at whether there is any relationship between sepal length and width:
 
+The code below is for Sepal. The code for Petal is almost identical.
 
+```python
+def plot_sepal_scattor():
+    sb.scatterplot(x = "Sepal Length (cm)", y = "Sepal Width (cm)", data = data,  hue = "Species",  palette = ["red","blue","lime"])
+    plt.title("Sepal length vs Setal width")
+    plt.xlabel("Setal length")
+    plt.ylabel("Setal width")
+    plt.legend()
+    plt.show()
+```
 
+Here are the scattor plots:
 
+![image](https://user-images.githubusercontent.com/16778503/230640272-f7984c69-6f01-40fd-88a3-f3ab323cb08a.png)
 
+Iris-Setosa appears to be the only flower that differs in a distinctive way in terms of speal length and width. However Iris-versicolor and Iris-virginica appear a little more varied and mixed together
 
+![image](https://user-images.githubusercontent.com/16778503/230640962-9ada7cc0-90d1-405c-b8b4-e810cfbbef0e.png)
 
+Examining the graph tells us that these two measurements increase together. Logically that must be true if they did not they would be very long thin petals, or else very short and wide petals. The graph also shows that this is a very good way to differenciate between the different flowers
 
 
 ## Box Plots
-<p>We will first look at how spread out these values are. To do this we can generate a box plot.
 
-![Box Code](/images/genBox.JPG)</p>
-**note: for this graph the mData used is "melted" data.
-![Melt Data](/images/melt.JPG)
- Melt() function is useful to massage a DataFrame into a format where one or more columns are identifier variables, while all other columns, considered measured variables, are unpivoted to the row axis, leaving just two non-identifier columns, variable and value [15]
+The code for creating a Petal Width Box Plot is below. There are 3 other Box Plots which are almost identical:
 
-![General Box Plot](/res/genBoxPlot.jpg)
+```python
+def boxplots():
+    sb.boxplot(x="Species", y="Petal Width (cm)", data=data)
+    plt.show()
+```
 
-<p>Sepal length and width seem to be spread fairly evenly amongst their own averages. In comparsion petal lengths and width are far more spread out with alot more values below the averages.</p> 
+![image](https://user-images.githubusercontent.com/16778503/230643176-b6c4fbce-d88a-4b8e-a9fa-0e1921f30ef6.png)
 
-<p>Next, we will look further into the dataset grouping by the specific flowers in the dataset.</p>
+![image](https://user-images.githubusercontent.com/16778503/230643232-8eddfb0e-39c2-4a5f-bd31-2f68c7e3ba4e.png)
 
-![Box Code](/images/boxM.JPG)
+![image](https://user-images.githubusercontent.com/16778503/230643292-1f640530-394c-45b5-91d8-4e2f18f9c41f.png)
 
-<p>This function plots the various features of the flower against each other [10, 11] </p>
-
-![Box Plot - Petal Length](/res/BoxPlotPetLen.jpg)
-![Box Plot - Petal Width](/res/BoxPlotPetWid.jpg)
-![Box Plot - Sepal Length](/res/BoxPlotSepLen.jpg)
-![Box Plot - Sepal Width](/res/BoxPlotSepWid.jpg)
-
-
+![image](https://user-images.githubusercontent.com/16778503/230643328-47505452-8d42-4c7b-b5b6-ce2249722dce.png)
 
