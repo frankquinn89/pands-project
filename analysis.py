@@ -165,3 +165,12 @@ def boxplots():
     plt.savefig("images/BoxPlotSetalLength.png")
     plt.show()
 
+#function to plot heatmap
+def plot_heatmap():
+    #configure size of image
+    plt.figure(figsize=(8,8))
+    #find correlation in data
+    sb.heatmap(data.corr(),annot=True)
+    plt.plot()
+    plt.savefig("images/Heatmap.png")
+    plt.show()

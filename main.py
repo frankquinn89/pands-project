@@ -15,7 +15,7 @@ def display_menu():
     print("3 - Show Scattor Plots")
     print("4 - Show Box Plots")
     print("5 - Show Pair Plot")
-    print("x - Exit Application")
+    print("6 - Show Heat Map")
     
 
 #Main function to start application and display menu
@@ -55,6 +55,11 @@ def main():
         elif (choice == "5"):
          analysis.pairplot()
          print("Completed! Pair Plots saved in 'images' folder!")
+
+       #Option to display and save Pair Plot images 
+        elif (choice == "6"):
+         analysis.plot_heatmap()
+        #print("Completed! Pair Plots saved in 'images' folder!")
 
         #Option to exit application. Use can use x or X to exit. 
         elif (choice in ("x",'X')):
