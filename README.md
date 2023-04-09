@@ -16,7 +16,8 @@
 4. Open main.py and run it to start the program
 5. A menu will appear with a variety of options for the user to choose from
 
-![image](https://user-images.githubusercontent.com/16778503/230615755-55ce769c-97aa-47c9-8458-5a3598394a6b.png)
+![image](https://user-images.githubusercontent.com/16778503/230791237-7e950d50-020b-4579-a2e9-90fe361f66b7.png)
+
 
 
 ## What is Fisher's Iris Data Set?
@@ -202,3 +203,18 @@ From the above graph, we can see that:
 The heatmap shows Sepal Length and Sepal Width features are slightly correlated with each other.
 
 ## References
+* [Wikipedia - Iris Flower Data Set](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+* [Wikipedia - Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher)
+* [Pandas Tutorial](https://data36.com/pandas-tutorial-1-basics-reading-data-files-dataframes-data-selection/)
+* [Geek for Geeks Data Science Tutorial](https://www.geeksforgeeks.org/python-for-data-science/)
+* [Offical Pandas Documentation](http://pandas.pydata.org/pandas-docs/version/0.21/generated/pandas.DataFrame.describe.html )
+* [Real Python - Plotting Histograms](https://realpython.com/python-histograms/)
+* [Tutorials Point - Seaborn Tutorial](https://www.tutorialspoint.com/seaborn/index.html)
+* [Offical Seaborn Tutorial](https://seaborn.pydata.org/tutorial.html)
+* [Seaborn - Swarm Plots](https://seaborn.pydata.org/generated/seaborn.swarmplot.html)
+* [Medium. Exploratory data analysis.](https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d)
+* [Basics of Pandas] (https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/)
+* [Kaggle - Iris Fisher Data] (https://www.kaggle.com/datasets/vikrishnan/iris-dataset)
+* [pyhub tutorial data analysis fisher] (https://pyhub01.gitbook.io/python-complete-tutorial/data-mining-and-machine-learning/iris-data-set)
+* [TowardsDataScience walkthrough of Iris Fisher] (https://towardsdatascience.com/classification-basics-walk-through-with-the-iris-data-set-d46b0331bf82)
+* [Angela1c: About Iris Fisher Data](https://www.angela1c.com/projects/iris_project/the-iris-dataset/)
