@@ -14,7 +14,7 @@
 2. Run command line.
 3. Navigate to where you have the files saved in your directory.
 4. Open main.py and run it to start the program
-5. A menu will appear with a variety of options for the user to chhose from
+5. A menu will appear with a variety of options for the user to choose from
 
 ![image](https://user-images.githubusercontent.com/16778503/230615755-55ce769c-97aa-47c9-8458-5a3598394a6b.png)
 
@@ -33,7 +33,7 @@ It can located here:
 </p>
 
 
-## AnalySummary
+## Analysis Summary
 <p>In order to look at fishers iris data set we must first import the various libraries needed to visualise and investigate the data. The libraries used in this project are; pandas, seaborn, and matplotlib.
 
 1. [Pandas](https://pandas.pydata.org/) -  an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools.
@@ -188,4 +188,11 @@ def boxplots():
 ![image](https://user-images.githubusercontent.com/16778503/230643292-1f640530-394c-45b5-91d8-4e2f18f9c41f.png)
 
 ![image](https://user-images.githubusercontent.com/16778503/230643328-47505452-8d42-4c7b-b5b6-ce2249722dce.png)
+
+From the above graph, we can see that:
+
+* Species Setosa has the smallest features and less distributed with some outliers
+* Species Versicolor has the average features
+* Species Virginica has the highest features
+
 
