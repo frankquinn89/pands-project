@@ -195,4 +195,10 @@ From the above graph, we can see that:
 * Species Versicolor has the average features
 * Species Virginica has the highest features
 
+## Heat Map
 
+![image](https://user-images.githubusercontent.com/16778503/230790999-99fa9964-48f1-4c03-bece-998f4b831349.png)
+
+The heatmap shows Sepal Length and Sepal Width features are slightly correlated with each other.
+
+## References
